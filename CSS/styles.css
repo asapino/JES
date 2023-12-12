@@ -116,8 +116,8 @@ footer {
 
 .custom-tooltip {
     position: absolute;
-    background-color: #3498db; /* Blue color for the tooltip */
-    color: #fff;
+    background-color: #092538; /* Blue color for the tooltip */
+    color: #be7c7c;
     padding: 5px;
     border-radius: 5px;
     z-index: 1000;
