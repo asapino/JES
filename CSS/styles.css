@@ -1,3 +1,8 @@
+body, h1, h2, h3, p, ul, ol, li, form, figure {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,7 +11,7 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    min-block-size: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
 header {
@@ -24,7 +29,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-inline-end: 20px;
 }
 
 .hero {
@@ -65,10 +70,48 @@ nav li {
     padding: 2em;
 }
 
+/* Footer styles */
 footer {
     background-color: #3498db; /* Blue color for the footer */
     color: #fff;
     text-align: center;
     padding: 1em;
-    margin-top: auto; /* Push the footer to the bottom */
+    margin-block-start: auto; /* Push the footer to the bottom */
+}
+
+/* Image Slider styles */
+.image-slider {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.slider-img {
+    display: none;
+    inline-size: 100%;
+}
+
+#prevButton, #nextButton {
+    background-color: #2ecc71; /* Green color for the buttons */
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Tooltips styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.custom-tooltip {
+    position: absolute;
+    background-color: #2ecc71; /* Green color for the tooltip */
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
 }
