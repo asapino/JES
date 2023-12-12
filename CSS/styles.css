@@ -1,4 +1,3 @@
-/* Reset styles */
 body, h1, h2, h3, p, ul, ol, li, form, figure {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ body {
     color: #fff; /* White color for text */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    min-block-size: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
 header {
@@ -27,7 +26,7 @@ nav.horizontal-nav {
     color: #fff;
     text-align: center;
     padding: 1em;
-    margin-top: auto; /* Push the navigation to the bottom */
+    margin-block-start: auto; /* Push the navigation to the bottom */
 }
 
 nav.horizontal-nav ul {
@@ -38,7 +37,7 @@ nav.horizontal-nav ul {
 }
 
 nav.horizontal-nav li {
-    margin-right: 20px;
+    margin-inline-end: 20px;
 }
 
 .hero {
@@ -84,7 +83,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
-    margin-top: auto; /* Push the footer to the bottom */
+    margin-block-start: auto; /* Push the footer to the bottom */
 }
 
 /* Image Slider styles */
@@ -95,7 +94,7 @@ footer {
 
 .slider-img {
     display: none;
-    width: 100%;
+    inline-size: 100%;
 }
 
 #prevButton, #nextButton {
