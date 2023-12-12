@@ -26,13 +26,12 @@ app.get('/contact', (req, res) => {
 
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
-  // Perform actions with the form data (e.g., send an email, store in a database)
-  // For simplicity, we'll just log the data in this example.
+
   console.log(`Received a contact form submission:
     Name: ${name}
     Email: ${email}
     Message: ${message}`);
-  res.redirect('/contact.html'); // Redirect to the contact page
+  res.redirect('/contact.html');
 });
 
 const PORT = process.env.PORT || 3000;

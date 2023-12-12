@@ -1,4 +1,3 @@
-/* Reset styles */
 body, h1, h2, h3, p, ul, ol, li, form, figure {
     margin: 0;
     padding: 0;
@@ -8,33 +7,33 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black color as the background */
-    color: #fff; /* White color for text */
+    background-color: #000;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    min-block-size: 100vh; /* Ensure the body takes at least the full viewport height */
+    min-block-size: 100vh; 
 }
 
 header {
-    background-color: #3498db; /* Blue color for the header */
+    background-color: #3498db;
     color: #fff;
     padding: 1em;
     text-align: center;
 }
 
 nav.horizontal-nav {
-    background-color: #3498db; /* Blue color for the navigation */
+    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 1em;
-    margin-block-start: auto; /* Push the navigation to the bottom */
+    margin-block-start: auto; 
 }
 
 nav.horizontal-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Display the list items horizontally */
+    display: flex;
 }
 
 nav.horizontal-nav li {
@@ -51,7 +50,7 @@ nav.horizontal-nav li {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db; /* Blue color for the call-to-action button */
+    background-color: #3498db;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -64,20 +63,18 @@ nav.horizontal-nav li {
     padding: 2em;
 }
 
-/* Additional styles for other pages */
 
-/* Engaging Content styles */
 .engaging-content {
     text-align: center;
     padding: 2em;
-    background-color: #2ecc71; /* Green color for these sections */
+    background-color: #2ecc71;
     color: #fff;
 }
 
 .engaging-content a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2ecc71; /* Green color for the CTA buttons */
+    background-color: #2ecc71;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -85,10 +82,9 @@ nav.horizontal-nav li {
 }
 
 .engaging-content a:hover {
-    background-color: #27ae60; /* Darker green color on hover */
+    background-color: #27ae60;
 }
 
-/* Image Slider styles */
 .image-slider {
     text-align: center;
     margin: 2em 0;
@@ -100,7 +96,7 @@ nav.horizontal-nav li {
 }
 
 #prevButton, #nextButton {
-    background-color: #3498db; /* Blue color for the buttons */
+    background-color: #3498db;
     color: #fff;
     padding: 10px;
     margin: 0 5px;
@@ -109,7 +105,6 @@ nav.horizontal-nav li {
     border-radius: 5px;
 }
 
-/* Tooltips styles */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -118,14 +113,13 @@ nav.horizontal-nav li {
 
 .custom-tooltip {
     position: absolute;
-    background-color: #3498db; /* Blue color for the tooltip */
+    background-color: #3498db;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
     z-index: 1000;
 }
 
-/* Social Media Links styles */
 .social-media-links {
     margin-block-start: 1em;
 }
@@ -134,21 +128,20 @@ nav.horizontal-nav li {
     display: inline-block;
     margin-inline-end: 10px;
     padding: 10px;
-    background-color: #3498db; /* Blue color for the social links */
+    background-color: #3498db;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .social-link:hover {
-    background-color: #2980b9; /* Darker blue color on hover */
+    background-color: #2980b9;
 }
 
-/* Footer styles */
 footer {
-    background-color: #3498db; /* Blue color for the footer */
+    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 1em;
-    margin-block-start: auto; /* Push the footer to the bottom */
+    margin-block-start: auto;
 }
