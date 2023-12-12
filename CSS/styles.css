@@ -1,3 +1,4 @@
+/* Reset styles */
 body, h1, h2, h3, p, ul, ol, li, form, figure {
     margin: 0;
     padding: 0;
@@ -7,29 +8,37 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #333;
+    background-color: #000; /* Black color as the background */
+    color: #fff; /* White color for text */
     display: flex;
     flex-direction: column;
-    min-block-size: 100vh; /* Ensure the body takes at least the full viewport height */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
 header {
-    background-color: #2ecc71;
+    background-color: #3498db; /* Blue color for the header */
     color: #fff;
     padding: 1em;
     text-align: center;
 }
 
-nav ul {
+nav.horizontal-nav {
+    background-color: #3498db; /* Blue color for the navigation */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto; /* Push the navigation to the bottom */
+}
+
+nav.horizontal-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Display the list items horizontally */
 }
 
-nav li {
-    display: inline;
-    margin-inline-end: 20px;
+nav.horizontal-nav li {
+    margin-right: 20px;
 }
 
 .hero {
@@ -37,13 +46,12 @@ nav li {
     padding: 2em;
     background-image: url('background-image.jpg');
     background-size: cover;
-    color: #fff;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2ecc71;
+    background-color: #3498db; /* Blue color for the call-to-action button */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -76,7 +84,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
-    margin-block-start: auto; /* Push the footer to the bottom */
+    margin-top: auto; /* Push the footer to the bottom */
 }
 
 /* Image Slider styles */
@@ -87,11 +95,11 @@ footer {
 
 .slider-img {
     display: none;
-    inline-size: 100%;
+    width: 100%;
 }
 
 #prevButton, #nextButton {
-    background-color: #2ecc71; /* Green color for the buttons */
+    background-color: #3498db; /* Blue color for the buttons */
     color: #fff;
     padding: 10px;
     margin: 0 5px;
@@ -109,7 +117,7 @@ footer {
 
 .custom-tooltip {
     position: absolute;
-    background-color: #2ecc71; /* Green color for the tooltip */
+    background-color: #3498db; /* Blue color for the tooltip */
     color: #fff;
     padding: 5px;
     border-radius: 5px;
