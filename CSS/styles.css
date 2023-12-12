@@ -1,3 +1,4 @@
+/* Reset styles */
 body, h1, h2, h3, p, ul, ol, li, form, figure {
     margin: 0;
     padding: 0;
@@ -56,34 +57,35 @@ nav.horizontal-nav li {
     border-radius: 5px;
 }
 
-.why-choose-us {
+.why-choose-us,
+.services,
+.about,
+.contact {
     padding: 2em;
 }
 
 /* Additional styles for other pages */
 
-/* Services Page */
-.services {
-    padding: 2em;
-}
-
-/* About Page */
-.about {
-    padding: 2em;
-}
-
-/* Contact Page */
-.contact {
-    padding: 2em;
-}
-
-/* Footer styles */
-footer {
-    background-color: #3498db; /* Blue color for the footer */
-    color: #fff;
+/* Engaging Content styles */
+.engaging-content {
     text-align: center;
-    padding: 1em;
-    margin-block-start: auto; /* Push the footer to the bottom */
+    padding: 2em;
+    background-color: #2ecc71; /* Green color for these sections */
+    color: #fff;
+}
+
+.engaging-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Green color for the CTA buttons */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-block-start: 1em;
+}
+
+.engaging-content a:hover {
+    background-color: #27ae60; /* Darker green color on hover */
 }
 
 /* Image Slider styles */
@@ -116,9 +118,37 @@ footer {
 
 .custom-tooltip {
     position: absolute;
-    background-color: #092538; /* Blue color for the tooltip */
-    color: #be7c7c;
+    background-color: #3498db; /* Blue color for the tooltip */
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
     z-index: 1000;
+}
+
+/* Social Media Links styles */
+.social-media-links {
+    margin-block-start: 1em;
+}
+
+.social-link {
+    display: inline-block;
+    margin-inline-end: 10px;
+    padding: 10px;
+    background-color: #3498db; /* Blue color for the social links */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-link:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #3498db; /* Blue color for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-block-start: auto; /* Push the footer to the bottom */
 }
